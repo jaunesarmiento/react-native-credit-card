@@ -161,12 +161,11 @@ class CreditCard extends Component {
                                 <View style={styles.number}><Text style={styles.textNumber}>{this.getValue("number")}</Text></View>
                                 <View style={styles.rowWrap}>
                                     <View style={styles.name}><Text style={styles.textName}>{this.getValue("name")}</Text></View>
-                                    <View style={styles.validthru}><Text style={styles.textValidThru}>VALID THRU</Text></View>
                                     <View
                                         style={styles.expiry}
                                         data-before={this.props.expiryBefore}
                                         data-after={this.props.expiryAfter}>
-                                        <Text style={styles.textSmall}>MONTH/YEAR</Text>
+                                        <Text style={styles.textSmall}>EXPIRES</Text>
                                         <Text style={styles.textExpiry}>{this.getValue("expiry")}</Text>
                                     </View>
                                 </View>
